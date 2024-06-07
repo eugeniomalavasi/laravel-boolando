@@ -1,21 +1,29 @@
 header {
     background-color: #ff6900;
-    height: 100px;
+    height: 80px;
     align-items: center;
     color: white;
+
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
+
         img {
-            height: 50px;
+            height: 40px;
         }
+
         ul {
             display: flex;
             justify-content: space-between;
             list-style: none;
             gap: 1rem;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 }

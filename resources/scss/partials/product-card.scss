@@ -1,0 +1,12 @@
+
+.card_top_container{
+    position: relative;
+    .label {
+        position: absolute;
+        top: 90%;
+        span {
+            display: inline-block;
+        }
+    }
+    
+}
