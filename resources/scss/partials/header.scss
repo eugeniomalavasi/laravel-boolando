@@ -1,0 +1,21 @@
+header {
+    background-color: #ff6900;
+    height: 100px;
+    align-items: center;
+    color: white;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        img {
+            height: 50px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            gap: 1rem;
+        }
+    }
+}

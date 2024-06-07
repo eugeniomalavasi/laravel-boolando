@@ -1,16 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-
     <div class="container">
-        <h1>Home page </h1>
         <div class="row">
-            <div class="col-6 col-md-4 col-lg-3 ">
-                @foreach ($products as $product)
-                <img src="{{Vite::asset('resources/img/' . $product['frontImage'])}}" alt="{{$product['name']}}">
-                    <p>{{$product['name']}}</p>
-                @endforeach             
-            </div>
+            @foreach ($products as $product)
+                <div class="col-4 col-sm-6 col-lg-4">
+                    @include('partials.product-card')
+                </div>
+            @endforeach
         </div>
-        </div>
-    @endsection
+    </div>
+@endsection

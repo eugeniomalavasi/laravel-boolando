@@ -17,3 +17,11 @@ Route::get('/', function () {
     $products = config("products.products");
     return view('home', compact('products'));
 })->name("home");
+
+Route::get('/uomo', function () {
+return view('man');
+})->name("man");
+
+Route::get('/donna', function () {
+return view('woman');
+})->name("woman");
