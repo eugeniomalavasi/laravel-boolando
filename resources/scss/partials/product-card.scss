@@ -1,12 +1,38 @@
-
-.card_top_container{
+.card_top_container {
     position: relative;
+
     .label {
         position: absolute;
         top: 90%;
-        span {
+
+        .green {
             display: inline-block;
+            background-color: green;
+            color: white;
+            padding: 0.2rem;
+        }
+
+        .red {
+            display: inline-block;
+            background-color: red;
+            color: white;
+            padding: 0.2rem;
         }
     }
-    
+
+    .heart {
+        position: absolute;
+        top: 10%;
+        right: 0;
+        font-size: 3rem;
+        background-color: white;
+
+        .orange {
+            color: #ff6900;
+        }
+        span {
+            padding: 1.2rem;
+        }
+    }
+
 }
