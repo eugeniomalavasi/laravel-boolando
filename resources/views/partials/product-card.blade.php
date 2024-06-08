@@ -1,5 +1,5 @@
 <div class="card_top_container">
-    <img src="{{ Vite::asset('resources/img/' . $product['frontImage']) }}" class="img-fluid" alt="{{ $product['name'] }}">
+    <img src="{{ Vite::asset('resources/img/' . $product['frontImage']) }}" class="img-fluid ms-card-img" alt="{{ $product['name'] }}">
     <div class="label">
         @foreach ($product['badges'] as $item)
             @if ($item['type'] === 'tag')
@@ -13,8 +13,9 @@
         <span @class(['orange' => $product['isInFavorites']])>&hearts;</span>
     </div>
 </div>
-<div>
-    <p>{{ $product['brand'] }}</p>
-    <p>{{ $product['name'] }}</p>
-    <p>{{ $product['price'] }}€</p>
+<div class="bottom-card">
+    <p class="brand-name">{{ $product['brand'] }}</p>
+    <p class="product-name">{{ $product['name'] }}</p>
+    <p class="price">{{ $product['price'] }}€</p>
+    <p class="price-disc">{{ ($product['price'] / 100) * 50 }}€</p>
 </div>

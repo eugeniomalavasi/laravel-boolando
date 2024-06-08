@@ -1,6 +1,10 @@
 .card_top_container {
     position: relative;
 
+    .ms-card-img {
+        border-radius: 10px;
+    }
+
     .label {
         position: absolute;
         top: 90%;
@@ -24,15 +28,41 @@
         position: absolute;
         top: 10%;
         right: 0;
-        font-size: 3rem;
+        font-size: 2.5rem;
         background-color: white;
+        border-radius: 10px 0 0 10px;
 
         .orange {
             color: #ff6900;
         }
+
         span {
-            padding: 1.2rem;
+            padding: 0.5rem;
         }
     }
 
+}
+
+.bottom-card {
+    .brand-name {
+        font-weight: 200;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    .product-name {
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .price {
+        color: red;
+        font-size: 0.8rem;
+        display: inline-block;
+    }
+
+    .price-disc {
+        font-size: 0.8rem;
+        display: inline-block;
+    }
 }

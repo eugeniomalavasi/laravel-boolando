@@ -4,7 +4,7 @@
     <div class="container mt-5">
         <div class="row">
             @foreach ($products as $product)
-                <div class="col-4 col-sm-6 col-lg-4">
+                <div class="col-xs-12 col-sm-6 col-lg-4">
                     @include('partials.product-card')
                 </div>
             @endforeach
